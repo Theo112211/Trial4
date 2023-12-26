@@ -1,0 +1,327 @@
+body{
+    background-image: url(boat.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+}
+
+p1{
+    background-color: rgb(0, 83, 0);
+    border-radius: 5px;
+    padding: 2px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.wrapper {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar {
+    min-height: 50;
+    max-height: 60px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(12, 75, 0);
+    box-shadow: 0px 0px 8px rgb(43, 255, 0);
+    border-radius: 8px;
+}
+
+.menuItems {
+    display: flex;
+    padding-top: none;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Brand {
+    text-decoration: none;
+    margin-top: none;
+    padding-top: none;
+    font-size: clamp(medium - larger);
+    color: rgb(30, 255, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.option {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+
+.option:hover {
+    color: rgb(9, 255, 0);
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropper:hover.dropdown {
+    display: block;
+}
+
+.contactDiv {
+    max-height: 400px;
+    margin-top: 100px;
+    padding-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgb(0, 68, 0);
+}
+
+.contact {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(15, 68, 4);
+}
+
+.head1 {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headDiv2 {
+    max-height: 400px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 139, 0, 0.568);
+    background-color: rgb(8, 56, 1);
+        opacity: 90%;
+}
+
+
+
+.Contactinfo {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: rgb(229, 255, 0);
+}
+
+.mail {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: yellow;
+}
+
+.head {
+    position: relative;
+    padding-top: 10px;
+    color: rgb(6, 71, 0);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headDiv {
+    background-color: rgb(255, 255, 255);
+    max-height: 400px;
+    max-width: 90vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 139, 0, 0.568);
+    gap: 10px;
+    opacity: 90%;
+    min-width: max-content;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    z-index: -1;
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+.name{
+    width:max-content;
+    padding: 2px;
+    margin: 1px;
+    align-self: center;
+    font-size: 23px;
+}
+
+.profile{
+    max-width: 200px;
+    min-width: 20px;
+}
+
+.qualification{
+    background-color: rgb(255, 255, 255);
+        max-height: 400px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        padding-top: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 8px rgba(0, 139, 0, 0.568);
+        gap: 10px;
+        opacity: 90%;
+        width: max-content;
+        align-content: center;
+        }
+
+@media (max-width<=531) {
+    .headDiv {
+        display: flex;
+        flex-direction: column; 
+        
+        /* grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px;
+        grid-gap: 5px;
+        grid-column: 1;
+        grid-row: 1; */
+    }
+
+}
+@media (max-width: 500px) {
+    .navbar {
+        display: none;
+        /* Hide the navbar at smaller viewports */
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(12, 75, 0);
+        padding: 10px 20px;
+        box-shadow: 0px 0px 8px rgb(43, 255, 0);
+        border-radius: 8px;
+        margin: 10px;
+    }
+
+    .mobile-menu-items {
+        display: none;
+        /* Initially hide the mobile menu items */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-menu-items a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 20px;
+font-family: 'Poppins', sans-serif;
+        margin: 5px 0;
+    }
+
+    .mobile-menu-items a:hover {
+        color: rgb(9, 255, 0);
+    }
+
+    .mobile-menu .menu-icon {
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+    }
+
+}
+
+/* Webkit based browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #73ff00;
+    /* Track color */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #1f611c;
+    box-shadow: 0px 0px 20px greenyellow;
+    min-height: 10px;
+    width: 3px;
+    border-radius: 5px;
+    /* Thumb color */
+}
+
+.headDiv:hover {
+    max-height: 404px;
+    box-shadow: 0px 0px 20px rgba(0, 139, 0, 0.568);
+    transition: all 1.5s ease-out;
+}
+
+.toTop {
+    font-family: 'Poppins', sans-serif;
+    padding: 2px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #1a7917;
+    color: white;
+    text-decoration: none;
+    box-shadow: #73ff00;
+    text-align: end;
+    max-width: max-content;
+    border-radius: 5px;
+    height: 30px;
+    z-index: 1000px;
+}
+
+.material-symbols-outlined {
+    color: #73ff00;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-symbols-outlined {
+    color: #73ff00;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.priceSign {
+    color: #73ff00;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
