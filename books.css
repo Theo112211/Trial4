@@ -1,6 +1,9 @@
 html {
     margin: 0px;
     padding: 0px;
+        scroll-behavior: smooth;
+    transition: all 0.03s ease-in-out;
+
 }
 
 body {
